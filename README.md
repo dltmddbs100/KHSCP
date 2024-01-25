@@ -1,5 +1,5 @@
 # KHSCP
-This repository contains the code and dataset for our paper Leveraging Pre-existing Resources for Data-Efficient Counter-Narrative Generation in Korean
+This repository contains the code and dataset for our paper "Leveraging Pre-existing Resources for Data-Efficient Counter-Narrative Generation in Korean"
 
 ## Overview
 
@@ -19,7 +19,7 @@ We utilize four Korean hate speech resources to augment Korean counter-narrative
   - [Unsmile](https://arxiv.org/abs/2204.03262)
   - [KOLD](https://aclanthology.org/2022.emnlp-main.744/)
 
-The general directory structure required in our repository is as follows.
+The required directory structure in our repository is as follows.
 
 ```bash
 📦kor_cn
@@ -77,7 +77,7 @@ python semantic_match.py --data_path ./data/mono_hs_data/unsmile/kold_v1.json
 ### Integration
 For the matched pairs, only pairs that have values above a certain threshold are extracted. They are combined with the existing training set to form an augmented set.
 ```python
-python integrate.py
+python integrate.py --threshold 0.6
 ```
 
 ### Training

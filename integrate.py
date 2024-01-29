@@ -51,10 +51,11 @@ def main(args):
             f"./data/threshold_integrated/kold_{i}_integrated.csv", index=False
         )
 
-    print('Sucessfully save integrated dataset')
+    print("Sucessfully save integrated dataset")
+
 
 if __name__ == "__main__":
     parser = ArgumentParser()
-    parser.add_argument('--threshold', type=float, default=0.6)
+    parser.add_argument("--threshold", type=float, default=0.6)
     args = parser.parse_args()
     main(args)

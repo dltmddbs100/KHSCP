@@ -91,6 +91,8 @@ def main(args):
 
 if __name__ == "__main__":
     parser = ArgumentParser()
-    parser.add_argument('--data_path', type=str, default="./data/mono_hs_data/unsmile/unsmile_full.csv")
+    parser.add_argument(
+        "--data_path", type=str, default="./data/mono_hs_data/unsmile/unsmile_full.csv"
+    )
     args = parser.parse_args()
     main(args)

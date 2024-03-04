@@ -1,5 +1,5 @@
 # KHSCP
-This repository contains the code and dataset for our paper "Leveraging Pre-existing Resources for Data-Efficient Counter-Narrative Generation in Korean"
+This repository contains the code and dataset for our paper "Leveraging Pre-existing Resources for Data-Efficient Counter-Narrative Generation in Korean".
 
 ## Overview
 
@@ -10,7 +10,7 @@ We propose a **Korean Hate Speech Counter Punch (KHSCP)**, a cost-effective coun
 ## Dataset
 
 ### Source Dataset
-Our dataset was constructed through translation based on the [multitarget CONAN dataset](https://aclanthology.org/2021.acl-long.250/). The categories of hate speech include MUSLIMS, MIGRANTS, WOMEN, LGBT+, JEWS, POC, OTHER, and DISABLED, and are composed of pairs of hate speech and counter-narratives. For the training of generative models, there are 4,002 for training, 500 for validation, and 501 for the test set respectively.
+Our dataset is constructed through translation based on the [multitarget CONAN dataset](https://aclanthology.org/2021.acl-long.250/). The categories of hate speech include MUSLIMS, MIGRANTS, WOMEN, LGBT+, JEWS, POC, OTHER, and DISABLED, and are composed of pairs of hate speech and counter-narratives. For the training of generative models, there are 4,002 for training, 500 for validation, and 501 for the test set respectively.
 
 ### Pre-existing Resources
 We utilize four Korean hate speech resources to augment Korean counter-narrative pairs through Semantic-based Based Augmentation (SBA). Each dataset is publicly available and must be downloaded to execute the code, to be stored in /data/mono_hs_data.
